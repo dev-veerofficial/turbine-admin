@@ -1,0 +1,309 @@
+// colors
+$color-p: #1D2D47;
+$color-p-lite: #566D92;
+$color-p-dark: #0F1A2C;
+$color-grey: #8FA9D2;
+$color-litegrey: #E6EDF8;
+$color-s: #239597;
+$color-s-lite: #3DC0C2;
+$color-light: #fff;
+$color-dark: #0F1A2C;
+$color-success: #1ab156;
+$color-err: #f64e4e;
+$color-sidebar-p: #17203f;
+$color-sidebar-s: #273050;
+$color-gold: #FFA914;
+$color-luminous: #A4938D;
+$color-darkgreen: #375E6E;
+$color-litegreen: #E4F2F8;
+
+//Effects
+
+.shadow-btn-s {
+    box-shadow: 0 13px 9px rgb(187, 182, 177);
+}
+.shadow-card {
+    box-shadow: 0 30px 20px rgba(246, 245, 254, 0.2);
+}
+.bg-gradient {
+    background: linear-gradient(to right, #1c105e, #2d063c);
+}
+
+.bg-light {
+    background-color: $color-light;
+}
+
+.bg-grey {
+    background-color: $color-grey;
+}
+.bg-p {
+    background-color: $color-p;
+}
+.bg-p-lite {
+    background-color: $color-p-lite;
+}
+.bg-success {
+    background-color: $color-success;
+}
+
+.bg-darkgreen{
+    background-color: $color-darkgreen;
+}
+
+.bg-litegreen{
+    background-color: $color-litegreen;
+}
+
+.txt-p {
+    color: $color-p;
+}
+.txt-p-lite {
+    color: $color-p-lite;
+}
+.txt-lite {
+    color: $color-light;
+}
+.txt-grey {
+    color: $color-grey;
+}
+.txt-success {
+    color: $color-success;
+}
+.txt-err {
+    color: $color-err;
+}
+.txt-gold {
+    color: $color-gold;
+}
+.txt-dark {
+    color: $color-dark;
+}
+.txt-luminous{
+    color: $color-luminous;
+}
+.txt-darkgreen{
+    color: $color-darkgreen;
+}
+
+
+// Fonts:
+.font-pop {
+    font-family: "Poppins", sans-serif;
+}
+.font-opens {
+    font-family: "Open Sans", sans-serif;
+}
+
+.pop-heavy {
+    @extend .font-pop;
+    font-weight: bold;
+}
+
+.pop-reg {
+    @extend .font-pop;
+    font-weight: normal;
+}
+
+.pop-lite {
+    @extend .font-pop;
+    font-weight: normal !important;
+}
+
+.para-xs {
+    font-size: 12px !important;
+}
+.para-sm {
+    font-size: 14px !important;
+}
+.para-reg {
+    font-size: 16px !important;
+}
+.para-lg {
+    font-size: 18px !important;
+}
+.para-xl {
+    font-size: 20px !important;
+}
+.h-s {
+    font-size: 22px !important;
+}
+.h-m {
+    font-size: 24px !important;
+}
+.h-l {
+    font-size: 28px !important;
+}
+.h-xl {
+    font-size: 32px !important;
+}
+.h-xxl {
+    font-size: 34px !important;
+}
+.h-xxxl {
+    font-size: 42px !important;
+    line-height: 30px;
+}
+
+// Buttons
+
+.btn {
+    @extend .pop-lite;
+    width: auto;
+    height: 50px;
+    line-height: 20px;
+    border-radius: 5px !important;
+    border: none;
+    padding: 15px 30px !important;
+}
+
+.btn-default {
+    background: $color-light;
+    box-shadow: 0 0 5px #8aa4af4d;
+    padding: 15px 20px !important;
+    min-width: none;
+    width: auto;
+
+    &:hover {
+        color: $color-p;
+    }
+}
+
+.btn-p {
+    background-color: $color-p;
+    color: $color-light !important;
+}
+
+.btn-light-p {
+    background-color: $color-light;
+    color: $color-p;
+}
+
+.btn-s {
+    background-color: $color-s;
+    color: $color-light;
+    &:hover{
+        background-color:$color-s-lite;
+        color: $color-light;
+    }
+}
+
+.btn-outline-s {
+    background: transparent;
+    color: $color-dark;
+    border: 1px solid $color-grey;
+}
+.btn-outline-p {
+    background: transparent;
+    color: $color-dark !important;
+    border: 1px solid $color-p;
+    &:hover {
+        background: $color-p;
+        border-color: $color-p;
+        color: $color-light !important;
+    }
+}
+
+.btn-outline-success {
+    border: 1px solid $color-success !important;
+    color: $color-success;
+    &:hover {
+        background: $color-success;
+        border-color: $color-p;
+        color: $color-light !important;
+    }
+    &[disabled] {
+        color: $color-grey !important;
+        border-color: $color-grey !important;
+    }
+}
+
+.btn-capsule {
+    border-radius: 35px !important;
+}
+
+.btn-auto {
+    width: auto !important;
+    min-width: none !important;
+    height: auto;
+    min-height: auto;
+}
+
+.btn-mini {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.btn-sm {
+    height: 40px !important;
+    line-height: 10px !important;
+    min-width: 0 !important;
+    padding: 15px 25px !important;
+}
+a:not(footer a) {
+    color: $color-p;
+}
+
+.link-s{
+    color: $color-s;
+}
+
+.link-light a,
+a .link-light {
+    color: $color-light;
+    &:hover {
+        color: $color-p;
+        text-decoration: none;
+    }
+}
+
+.link-dark a,
+a .link-dark {
+    color: $color-dark;
+    &:hover {
+        color: $color-p;
+        text-decoration: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-strong {
+    @extend .pop-heavy;
+}
+
+//width and height
+.w100,
+.w100 * {
+    width: 100%;
+}
+
+.h-100{
+    min-height: 100vh !important;
+}
+
+.mh80 {
+    min-height: 80vh;
+}
+
+.form-group {
+    position: relative;
+    margin-top: 20px;
+
+    label {
+        @extend .para-sm;
+        color: $color-grey;
+        display: inline-block;
+        background: $color-light;
+    }
+}
+
+
+// table
+thead{
+    background-color: $color-p;
+    border: none;
+    color: $color-light;
+}
