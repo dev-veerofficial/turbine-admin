@@ -20,12 +20,13 @@
                     <div class="col-12 text-center">
                         <img src="assets/images/logo-dronebase-2x.png" alt="">
                     </div>
-                    <div class="col-5 login-box mt-5 border border-4 rounded-3 p-5 m-auto">
+                    <div class="col-12 col-lg-5 login-box mt-5 border border-4 rounded-3 px-3 py-5 px-md-5 m-auto">
                         <div class="col-12 mb-5 txt-lite text-center">
                             <h2>ADMIN LOGIN</h2>
                         </div>
-                        <span class="bg-danger txt-lite px-2 py-1 rounded rounded-radius">Please enter valid email address.</span>
-                        <div class="input-group mb-3 input-mega mb-4 border border-danger">
+                        <!-- <span class="bg-danger txt-lite px-2 py-1 rounded rounded-radius">Please enter valid email address.</span> -->
+                        <!-- <div class="input-group mb-3 input-mega mb-4 border border-danger"> -->
+                        <div class="input-group mb-3 input-mega mb-4">
                             <input type="text" class="form-control" placeholder="Email Address"
                                 aria-label="Amount (to the nearest dollar)">
                             <span class="input-group-text"><i class="fa fa-envelope"></i> </span>

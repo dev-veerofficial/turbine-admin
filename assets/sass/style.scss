@@ -100,7 +100,16 @@ select {
     max-width: 100%;
     min-height: 500px;
     overflow: hidden;
-    margin-top: 100px;
+    margin-top: 80px;
+}
+
+#pagewrapper{
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+    .container{
+        margin-top: 30px;
+        max-width: 80%;
+    }
 }
 
 .navbar-brand {
@@ -139,7 +148,7 @@ nav {
     height: 80px;
     background-color: $color-sidebar-p;
     box-shadow: 1px 8px 8px rgba(0, 0, 0, 0.05);
-    a {
+    a:not(.dropdown-item) {
         display: inline-block;
         margin: 0 10px;
         color: $color-light !important;
@@ -154,15 +163,16 @@ nav {
     }
 }
 
+
 #sidemenu {
     width: 250px;
-    height: calc(100% - 80px);
+    // height: calc(100% - 80px);
     background-color: $color-sidebar-p;
-    position: fixed;
-    left: 0rem;
-    bottom: 0;
-    z-index: 100;
-    transition: all 0.3s ease;
+    // position: fixed;
+    // left: 0rem;
+    // bottom: 0;
+    // z-index: 100;
+    transition: all 0.1s ease;
     overflow-y: auto;
     a {
         color: $color-grey;
@@ -209,7 +219,7 @@ li.dd > a:after {
 
 #sidemenu.collapsed {
     width: 60px;
-    transition: all 0.3s ease;
+    // transition: all 0.1s ease;
     display: block;
     overflow-y: hidden;
     ul {
@@ -564,10 +574,17 @@ thead th {
     }
 }
 
-.iput-filters {
+.iput-filters, .select2-container--default .select2-selection--single {
     background: #e8ecf1;
     border: none !important;
     height: 40px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 40px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    height: 40px;
 }
 
 .teamlist {
@@ -625,4 +642,24 @@ thead th {
 .calendar-table th {
     background: #f5f5f5;
     color: #333;
+}
+
+
+@media screen and (max-width:767px){
+    #sidemenu {
+        width: 100%;
+        background-color: #17203f;
+        transition: all 0.1s ease;
+        overflow-y: auto;
+        position: fixed;
+        z-index: 999;
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+    #sidemenu.collapsed{
+        width:0px;
+    }
+    #pagewrapper .container{
+        max-width: 100%;
+    }
 }
